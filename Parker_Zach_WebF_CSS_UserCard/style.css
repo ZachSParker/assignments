@@ -1,0 +1,45 @@
+*{
+    margin: 0px auto;
+}
+
+
+.container {
+    width: 900px;
+    height:900px;
+    justify-content:center;
+}
+.white{
+    width:650px;
+    height:250px;
+    background-color: rgb(248, 249, 244);
+}
+.white,.blue{
+    border: solid 1px black;
+}
+.white .icon img{
+    width:15px;
+    height:20px;
+    margin-left:3%;
+}
+.icon:last-child{
+    margin-top:20px;
+}
+h1{
+    margin-left:3%;
+}
+.icon .pre{
+    font-size:18px;
+}
+
+.white #userCircle{
+    width:80px;
+    height:80px;
+    margin-top:-45px;
+    margin-left:30px;
+}
+.blue{
+    margin-top:5%;
+    width:650px;
+    height:100px;
+    background-color:teal;
+}

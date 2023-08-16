@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+        <div class="nav-bar">
+            <h1>Dojonary</h1>
+            <form action="#">
+                <input type="text" placeholder="search">
+            </form>
+            <button onclick="loggedIn(this)">Login</button>
+        </div>
+        <div class="container">
+            <div class="left-container">
+                <div class="ninjaDef">
+                    <h2>ninja</h2>
+                    <h3>noun</h3>
+                    <h3>plural:ninjas</h3>
+                    <pre>                        A practicioner skilled in the 
+                        japanese art of ninjutsu
+                    </pre>
+                    <button onclick="alert('ninja has been liked'),likeUp('likesCount1');"><span id="likesCount1">1</span>Likes</button>
+                </div>
+                <div class="ninjaDef">  
+                    <h2>ninja</h2>
+                    <h3>noun</h3>
+                    <h3>plural:ninjas</h3>
+                    <pre>                    A programmer that breaks down code 
+                        with zen-like focus
+
+                    </pre>
+                    <button onclick="alert('ninja has been liked'),likeUp('likesCount2');">
+                        <span id="likesCount2">1</span>Likes</button>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="definition">
+                    <p><h3>Dojonary is defined by YOU</h3></p>
+                    <button onclick="defHide(this) "id="hideDef">Add Definition</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

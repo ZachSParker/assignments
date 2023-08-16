@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <h1>Registration Form</h1>
+    <form action="/process" method ="post">
+        <div>
+            <label>First Name*</label>
+            <input type="text" name ="fName"
+            placeholder="First Name">
+            <!-- first name-->
+        </div>
+        <div>
+            <label>Last Name*</label>
+            <input type="text" name="lName"
+            placeholder="Last Name">
+            <!-- last name-->
+        </div>
+        <div>
+            <label> Email Address*</label>
+            <input type="email" name="Email">
+            <!-- email address-->
+        </div>
+        <div>
+            <label>Password*</label>
+            <input type="password" name="uPassword"
+            placeholder="*******"> 
+            <!-- user password-->
+        </div>
+        <div>
+            <label>Confirm Password*</label>
+            <input type="password" name="uCPassword"
+            placeholder="*******">
+            <!-- confirm password -->
+        </div>
+        <div>
+            <label>Birthday</label>
+            <input type="date" name="uBirthday">
+            <!-- Birthday mm/dd/yy -->
+        </div>
+        <div>
+<hr>
+            <p>Sex</p>
+            <input type="radio" name="uSex" value="Male"
+            id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="uSex" value="Female"
+            id="Female">
+            <label for="Female">Female</label>
+            <!-- user sex, options between male and female -->
+        </div>
+        <div>
+          <p>a short description about yourself:</p>
+          <textarea name="uBio" cols="10" rows="3">
+          </textarea>
+        </div>
+        <div>
+            <p>Favorite Programming Language</p>
+            <select name="favLang">
+                <option value="JavascriptLang">Javascript</option>
+                <option value="C++Lang">C++</option>
+                <option value="htmlLang">HTML</option>
+                <option value="PyLang">Python</option>
+            </select>
+            <!-- favorite language select box -->
+        </div>
+        <div>
+            <input type="checkbox" name="email updates" id="email updates">
+            <label for="accept">I agree to email updates!</label>
+            <!-- checkbox for email updates -->
+            <input type="submit" value="Create Account">
+            <!-- submit button to create the user account -->
+        </div>
+        <p>*indicates a required field</p>
+    </form>  
+</head>
+<body>
+    
+</body>
+</html>
