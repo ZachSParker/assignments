@@ -54,14 +54,11 @@ function reverse(arr){
     return arr;
 }
 // console.log(reverse([1,2,3,4,5]));
-// function fibonacciArr(n){
-//     let fibArr = [0,1]
-//     let first = fibArr[fibArr.length - 2];
-//     let second = fibArr[fibArr.length -1];
-//     fibArr.length = n;
-//     for(var i = 0;i < n;i++){
-//         fibArr.push(first + second);
-//     }
-//     return fibArr;
-// }
-// console.log(fibonacciArr(3));
+function fibonacciArr(n){
+    let fibArr = [0,1]
+    for(var i = 2;i < n;i++){
+        fibArr[i] = fibArr[i-1] + fibArr[i-2];
+    }
+    return fibArr;
+}
+console.log(fibonacciArr(9));
