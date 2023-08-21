@@ -42,6 +42,26 @@ function betterThanAverage(arr){
 // var result = betterThanAverage([6,8,3,10,-2,5,9]);
 // console.log(result);
 function reverse(arr){
-    
+    var index = 0;
+    var revIndex = arr.length - 1;
+    while(index < revIndex){
+        var temp = arr[index];
+        arr[index] = arr[revIndex];
+        arr[revIndex] = temp;
+        index++;
+        revIndex--;
+    }
     return arr;
 }
+// console.log(reverse([1,2,3,4,5]));
+// function fibonacciArr(n){
+//     let fibArr = [0,1]
+//     let first = fibArr[fibArr.length - 2];
+//     let second = fibArr[fibArr.length -1];
+//     fibArr.length = n;
+//     for(var i = 0;i < n;i++){
+//         fibArr.push(first + second);
+//     }
+//     return fibArr;
+// }
+// console.log(fibonacciArr(3));
