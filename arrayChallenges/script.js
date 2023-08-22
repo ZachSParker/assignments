@@ -53,6 +53,7 @@ function reverse(arr){
     }
     return arr;
 }
+
 // console.log(reverse([1,2,3,4,5]));
 function fibonacciArr(n){
     let fibArr = [0,1]
@@ -61,4 +62,4 @@ function fibonacciArr(n){
     }
     return fibArr;
 }
-console.log(fibonacciArr(9));
+// console.log(fibonacciArr(15));
